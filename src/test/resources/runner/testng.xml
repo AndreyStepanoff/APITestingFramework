@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="APITestingFramework.listeners.ExtentListeners"></listener>
+    </listeners>
+    <test name="Create customer API test">
+        <classes>
+            <class name="APITestingFramework.testcases.CreateCustomerTest">
+                <methods>
+                    <include name="CreateCustomerWithValidSecretKey"></include>
+                    <include name="CreateCustomerWithInvalidSecretKey"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    
+    <test name="Delete customer">
+        <classes>
+            <class name="APITestingFramework.testcases.DeleteCustomerTest"></class>
+        </classes>
+    </test>
+</suite>

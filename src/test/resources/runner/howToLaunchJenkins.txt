@@ -1,0 +1,1 @@
+from cmd: java -Dhudson.model.DirectoryBrowserSupport.CSP="" -jar jenkins.war --enable-future-java
